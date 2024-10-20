@@ -93,7 +93,13 @@ def main():
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-        input("\nPress Enter to continue...")
+        # if no exceptions are raised
+        else:
+            print("Operation completed successfully.")
+        
+        # Will always run after the try block
+        finally:
+            input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()
